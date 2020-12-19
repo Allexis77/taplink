@@ -1,0 +1,59 @@
+@import "./vars"
+.heading-two
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 120px
+    & h2
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin: 0
+        font-weight: 900
+        font-size: 24px
+        line-height: 31px
+        color: $white
+.text-rb
+    & p 
+        font-weight: 400
+        font-size: 18px
+        color: $white
+        & span
+            letter-spacing: 4% 
+            font-weight: 800
+
+.advantages
+    text-align: center
+
+.swiper-button
+    width: 55px
+    height: 55px
+    background: #EC5028
+    border-radius: 100%
+    position: relative
+    &::after
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        font-size: 21px
+        color: #fff
+
+.works-btn
+    margin: 10px auto 0
+    width: 254px
+    height: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: linear-gradient(90deg, #9D50BB 0%, #6E48AA 100%)
+    border-radius: 38.5px
+    & a
+        text-decoration: none
+        color: $white
+        font-size: 18px
+        font-weight: 900
+        line-height: 30px
+        letter-spacing: 0.04em
