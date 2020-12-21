@@ -65,6 +65,16 @@ body
 			height: 450px
 			&-img
 				z-index: -1
+				box-shadow: 52px 20px 88px rgba(2, 3, 3, 0.5), -8px -16px 56px rgba(232, 237, 243, 0.08), inset -16px -6px 80px rgba(248, 249, 249, 0.03)
+				border-radius: 100%
+				padding: 10px
+				display: flex
+				justify-content: center
+				align-items: center
+				& img
+					width: 200px
+					height: 202px
+					border-radius: 100%
 			&-text
 				position: absolute
 				top: 400px
@@ -122,6 +132,7 @@ body
 	flex-direction: column
 	height: 675px
 	position: relative
+	width: 100%
 	&::before
 		content: ''
 		position: absolute
@@ -362,12 +373,17 @@ body
 				border-radius: 25px
 				padding: 0 10px
 				& img
+					padding: 0
+					margin: 0
 					width: 24px
+					height: 24px
 					margin-right: 5px
 				& h3
 					font-size: 14px
 					font-weight: 500
 					color: $black
+					padding: 0
+					margin: 0
 #contacts-box__links-telegram
 	background: #039BE5
 	& h3
@@ -385,7 +401,29 @@ body
 	align-items: center
 
 @media (min-width: 415px)
+	body
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+	.contacts-bg
+		right: -9%
 	.header
+		width: 415px
+	.works
+		width: 415px
+	.acordion
+		width: 415px
+	.cost
+		width: 415px
+	.contacts
+		width: 415px
+	.header-leftblock img
+		width: 320px
+	.header-hi__leftblock
+		left: 0
+		& p
+			font-size: 54px
 // @media (min-width: 992px)
 
 // @media (min-width: 1200px)
